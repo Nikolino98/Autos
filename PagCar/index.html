@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nombre empresa</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/normalize.css">
+    <!-- <link rel="stylesheet" href="style/app.css"> -->
+    <link rel="stylesheet" href="style/skeleton.css">
+</head>
+<body>
+    <!-- Encabezado principal que se mantendra en toda la pagina -->
+    <header id="header-stick">Nombre de la empresa // datos de contacto wsp - insta / ubicacion</header>
+
+
+    <div class="header">
+        <div class="logo">
+            <img src="images/Flags.png" alt="Logo empresa">
+        </div>
+    <nav>
+        <ul class="nav-links">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="search.html">Autos</a></li>
+            <li><a href="busca.html">Contacto</a></li>
+        </ul>
+    </nav>
+
+    </div>
+
+    <!-- Portada -->
+
+    <div class="first-bg">
+
+        <img class="img-bg" src="images/bginicio.jpg" alt="">
+        
+        <div class="text">
+            <p class="text-bg">Queremo que sigas avanzando</p>
+            <h1 class="text-bg">En {nombre empresa} podes comprar, vender tu vehiculo, siempre con el mejor asesoramiento</h1>
+        </div>
+
+
+        <!-- Busca autos -->
+    </div>
+
+    <div class="contenedor">
+
+
+        <form id="buscador">
+            <div class="row">
+                <div class="three columns">
+                    <label for="marca">Marca</label>
+                    <select class="u-full-width" id="marca">
+                        <option value="">Todos</option>
+                        <option value="Audi">Audi</option>
+                        <option value="BMW">BMW</option>
+                        <option value="Mercedes Benz">Mercedes Benz</option>
+                        <option value="Chevrolet">Chevrolet</option>
+                        <option value="Ford">Ford</option>
+                        <option value="Dodge">Dodge</option>
+                    </select>
+                </div>
+                <div class="three columns">
+                    <label for="year">Año</label>
+                    <select class="u-full-width" id="year">
+                        <option value="">Todos</option>
+                    </select>
+                </div>
+                <div class="three columns">
+                    <label for="minimo">Precio Min</label>
+                    <select class="u-full-width" id="minimo">
+                            <option value="">Todos</option>
+                            <option value="20000">20,000</option>
+                            <option value="30000">30,000</option>
+                            <option value="40000">40,000</option>
+                            <option value="50000">50,000</option>
+                            <option value="60000">60,000</option>
+                            <option value="70000">70,000</option>
+                            <option value="80000">80,000</option>
+                            <option value="90000">90,000</option>
+                    </select>
+                </div>
+                <div class="three columns">
+                    <label for="maximo">Precio Max</label>
+                    <select class="u-full-width" id="maximo">
+                            <option value="">Todos</option>
+                            <option value="20000">20,000</option>
+                            <option value="30000">30,000</option>
+                            <option value="40000">40,000</option>
+                            <option value="50000">50,000</option>
+                            <option value="60000">60,000</option>
+                            <option value="70000">70,000</option>
+                            <option value="80000">80,000</option>
+                            <option value="90000">90,000</option>
+                    </select>
+                </div>
+            </div>
+        </form>
+
+        <h1 style="color: #000;">Resultados</h1>
+        <div id="resultado"></div>
+    </div>
+
+
+    <!-- Ubicacion -->
+    
+    <div class="location">
+        <div class="info">
+
+
+            
+            <h1 class="title-loc"><img src="images/maps-and-location.png" alt="ubicacion"> Concesionaria ...</h1>
+            <p><img class="icon" src="images/maps-and-location (1).png" alt=""> Av Leandro N Alem 1130</p>
+            <p><img class="icon" src="images/telefono-movil.png" alt=""> 351 - 3334444</p>
+            <p><img class="icon" src="images/email.png" alt=""> Email: example@gmail.com</p>
+            <p><img class="icon" src="images/derechos-de-autor.png" alt=""> Politicas de privacidad</p>
+        </div>
+
+        <div class="horario">
+            <h1>Horarios</h1>
+            <p>Lunes a Viernes <br> 15:00 a 18:00</p>
+        </div>
+
+        <div class="mapa">
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3405.8689877622537!2d-64.16602322474934!3d-31.39017579498412!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94329816ef12f8c9%3A0xc2d098be0e2fb7a7!2sAv.%20Leandro%20N.%20Alem%201137%2C%20X5001HYJ%20C%C3%B3rdoba!5e0!3m2!1ses-419!2sar!4v1733809730810!5m2!1ses-419!2sar" width="550" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        </div>
+    </div>
+
+    <div class="pie">
+        <p>Todos los derechos reservados 2024</p>
+    </div>
+
+    <script src="js/db.js"></script>
+    <script src="js/app.js"></script>
+
+</body>
+</html>

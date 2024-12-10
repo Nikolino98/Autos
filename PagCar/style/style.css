@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header{
+    /* position: sticky !important; */
+}
+
+/* Header */
+
+#header-stick{
+    color: black;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    position: sticky;
+    top: 0;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    border: #000000 1px solid;
+}
+
+.header{
+    background-color: aqua;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    height: 85px;
+    padding: 5px 10px;
+}
+
+.header .logo{
+    cursor: pointer;
+}
+
+.header .logo img{
+    height: 70px;
+    width: auto;
+    transition: all .3s;
+}
+
+.header .logo img:hover{
+    transform: scale(1.2);
+}
+
+/* Nav */
+
+.header .nav-links{
+    list-style: none;
+}
+
+.header .nav-links li{
+    display: inline;
+    padding: 0 20px;
+}
+
+.header .nav-links a{
+    font-size: 700;
+    color: black;
+    text-decoration: none;
+}
+
+.header .nav-links li:hover{
+    transform: scale(1.1);
+}
+
+.header .nav-links li a:hover{
+    color: yellowgreen;
+}
+
+/* Cabezera */
+
+.first-bg{
+    /* position: relative; */
+    display: inline-block;
+    text-align: center;
+}
+
+.first-bg img{
+    width: 100%;
+    aspect-ratio: 22/9 ;
+    object-fit: cover;
+}
+
+.first-bg .text{
+    color: rgb(222, 131, 12);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.first-bg p{
+    font-size: 2.875rem;
+    font-family: "Roboto Bold", Arial, Helvetica, sans-serif;
+    letter-spacing: .05rem;
+    line-height: 1;
+}
+
+.first-bg h1{
+    font-size: 1.125rem;
+    font-family: "Roboto Regular", Arial, Helvetica, sans-serif;
+    letter-spacing: .05rem;
+    line-height: 1.5rem;
+}
+
+/* Buscador autos */
+
+form {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 4rem;
+    background: white;
+    margin-bottom: 0rem;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 5vh;
+}
+
+
+.contenedor {
+    background-color: white;
+    max-width: 1200px;
+    margin: 10% auto;
+    margin-top: 40px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+
+#resultado{
+    width: 100%;
+
+    display: grid;
+    grid-template-rows: repeat(auto-fit, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    border: 3px solid #000000;
+    padding: 1%;
+}
+
+#resultado p {
+    margin: 0;
+    padding: 1.5rem;
+    border: 1px solid #000000;
+}
+
+#resultado p span {
+    font-weight: bold;
+}
+
+
+
+
+#app p{
+    text-align: left!important;
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.alerta{
+    padding: 1rem;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+    font-size: 2rem;
+
+}
+
+.error{
+    background-color: red;
+}
+
+
+/* Footer */
+
+.location{
+
+   width: 100%;
+   display: flex;
+   gap: 6%;
+   justify-content: center;
+   align-items: center;
+   border: 1px solid #000000;
+   font-size: 14px;
+}
+
+.title-loc{
+    margin-bottom: 5px;
+}
+
+.location .info img{
+    width: 7%;
+}
+
+.location .info .icon{
+    width: 6%;
+    display: none;
+}
+
+.location .info{
+    flex-direction: column;
+    text-align: center;
+    letter-spacing: .5px;
+}
+
+.location .horario{
+    align-items: flex-start;
+    padding-bottom: 11rem;
+    text-align: center;
+}
+
+/* End */
+
+.pie{
+    background-color: #000000;
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    width: 100%;
+    height: 50px;
+}
+.pie p{
+    padding: 20px 0 0 0;
+}
